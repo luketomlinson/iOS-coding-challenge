@@ -9,14 +9,14 @@ func printHistogram(with values: [Int]) {
     var uniques = Set<Int>()
     values.map { uniques.insert($0) }
 
-    let count = uniques.map { value in values.filter { $0 == value }.count }
+    let counts = uniques.map { value in values.filter { $0 == value }.count }
     
-    let maxX = count.count
-    let maxY = count.max() ?? 0
+    let maxX = counts.count
+    let maxY = counts.max() ?? 0
 
     for y in (0 ..< maxY).reversed() {
         for x in 0 ..< maxX {
-            if count[x] > y {
+            if counts[x] > y {
                 print("*", terminator: "")
             } else {
                 print(" ", terminator: "")
