@@ -1,6 +1,6 @@
 //: jrtb's histogram
 
-import UIKit
+// import UIKit
 
 func printHistogram(with values: [Int]) {
     print("Input: \(values)")

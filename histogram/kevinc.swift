@@ -1,4 +1,4 @@
-#!/usr/bin/env swift
+// #!/usr/bin/env swift
 
 private func countsByNumber(of numbers: [Int]) -> [Int : Int] {
     var counts: [Int : Int] = [:]

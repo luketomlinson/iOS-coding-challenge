@@ -1,6 +1,6 @@
 // Joshua Evan Queen
 
-import UIKit
+// import UIKit
 
 func printHistogram(arrayVals: [Int]) {
     // Create an empty dictionary
