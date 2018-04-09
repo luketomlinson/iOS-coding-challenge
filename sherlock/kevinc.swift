@@ -69,14 +69,14 @@ enum SherlockResult {
 
 }
 
-extension String {
+extension SherlockResult: CustomStringConvertible {
 
-    init(_ sherlockResult: SherlockResult) {
-        switch sherlockResult {
+    var description: String {
+        switch self {
         case .valid:
-            self = "YES"
+            return "YES"
         case .invalid:
-            self = "NO"
+            return "NO"
         }
     }
 
